@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar.sticky-top {
+  position: sticky !important;
+  top: 0;
+  z-index: 1030; 
+}
+
+.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}

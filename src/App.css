@@ -1,0 +1,178 @@
+/* Nvabr */
+
+.custom-ms{
+    margin-left: 100px;
+}
+@media (max-width:993px) {
+    .custom-ms{
+    margin-left: auto;
+}
+}
+
+/* The Home Page */
+.carousel-image {
+  height: 100vh;
+}
+.carousel-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); 
+  z-index: 1;
+}
+.carousel-caption {
+  top: -78px;
+  z-index: 2;
+}
+
+.carousel-caption h1 {
+  font-size: 3.5rem;
+  margin-top: 10px;
+}
+
+.carousel-caption p {
+  font-size: 1.25rem;
+}
+/* Hover Effect */
+.hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom Background for Cards Section */
+.custom-cards-section {
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top Shape Divider */
+.custom-shape-divider-top {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top svg {
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-top .shape-fill {
+  fill: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 23px;
+    margin-top: -150px;
+  }
+
+  .carousel-caption p {
+    font-size: 12px;
+  }
+  .carousel-image{
+    height: fit-content !important;
+    height: 50vh !important;
+}
+}
+
+/* Facility Image Hover */
+.facility-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.facility-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.facility-image-container:hover .facility-hover-overlay {
+  opacity: 1;
+}
+
+.facility-card img {
+  transition: transform 0.5s ease;
+}
+
+.facility-image-container:hover img {
+  transform: scale(1.1);
+}
+
+.facility-card-body {
+  background: linear-gradient(152deg, rgb(174 238 186) 0%, rgb(108 176 255) 100%); 
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 1rem;
+}
+.facility-card-body .card-title {
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin: 0;
+}
+.notice-board {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  max-height: 450px;
+  min-height: 450px;
+  position: relative;
+}
+
+.notice-marquee {
+  display: inline-block;
+  animation: scroll-up 20s linear infinite;
+}
+
+.notice-board:hover .notice-marquee {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.notice-board li {
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.notice-board li:hover {
+  color: #0d6efd;
+  cursor: pointer;
+}
+
+/* footer */
+.footer-logo{
+    max-width: 380px;
+}
+.footer-section{
+    background-image: url(./assets/images/bg1.jpg ) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (min-width: 769px)and (max-width:1199px) {
+.footer-logo{
+    max-width: 230px;
+}
+}

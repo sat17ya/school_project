@@ -1,0 +1,105 @@
+import { Link } from "react-router-dom";
+import FooterLogo from "../assets/images/footer logo.png"
+
+function Footer() {
+  return (
+    <footer className="footer-section text-white pt-5" style={{ backgroundColor: "#0a2647" }}>
+      <div className="container">
+        <div className="row gy-4">
+          {/* Contact Info */}
+          <div className="col-md-4">
+            <h5 className="fw-bold mb-3">Find us</h5>
+            <p className="mb-1">Pragati Concept School</p>
+            <p className="mb-1">Raisingpur</p>
+            <p className="mb-1">Bhawanipatna</p>
+            <p className="mb-1">Kalahandi</p>
+            <p className="mb-3">Odisha - 766002</p>
+
+            <h5 className="fw-bold mb-2">Call us</h5>
+            <a className="text-decoration-none text-white" href="tel:+918093370988">+91 8093370988</a>
+
+            <h5 className="fw-bold mb-2 mt-2">Mail us</h5>
+            <a className="text-decoration-none text-white" href="mailto:pragaticonceptschoolkld@gmail.com">pragaticonceptschoolkld@gmail.com</a>
+            <small>{" "}(General Enquiry)</small>
+          </div>
+
+          {/* About and Social */}
+          <div className="col-md-4 text-center">
+            <img
+              src={FooterLogo}
+              alt="PCS Logo"
+              className="mb-3 footer-logo"
+            />
+            <p className="mb-4 px-3">
+              Pragati Concept School, a co-educational EM school offers a vibrant, verdant and secure ambience where the joy of learning is nurtured in every student.
+            </p>
+            <h5 className="fw-bold mb-3">Follow us</h5>
+            <div className="d-flex justify-content-center gap-3">
+              <a href="/" className="text-white fs-4">
+                <i className="bi bi-facebook"></i>
+              </a>
+              <a href="/" className="text-white fs-4">
+                <i className="bi bi-whatsapp"></i>
+              </a>
+              <a href="/" className="text-white fs-4">
+                <i className="bi bi-instagram"></i>
+              </a>
+            </div>
+          </div>
+
+          {/* Useful Links and Location */}
+          <div className="col-md-4">
+            <div className="row">
+              <div className="col-6 mb-4">
+                <h5 className="fw-bold mb-3">Useful Links</h5>
+                <ul className="list-unstyled">
+                  <li><Link to="/" className="text-white text-decoration-none mb-2 d-block">Home</Link></li>
+                  <li><Link to="/vision" className="text-white text-decoration-none mb-2 d-block">Vision & Mission</Link></li>
+                  <li><Link to="/facilities" className="text-white text-decoration-none mb-2 d-block">Facilities</Link></li>
+                  <li><Link to="/events" className="text-white text-decoration-none mb-2 d-block">Events</Link></li>
+                  <li><Link to="/co-scholastic" className="text-white text-decoration-none mb-2 d-block">Co-Scholastic</Link></li>
+                </ul>
+              </div>
+              <div className="col-6 mb-4">
+                <h5 className="fw-bold mb-3">&nbsp;</h5>
+                <ul className="list-unstyled">
+                  <li><Link to="/about" className="text-white text-decoration-none mb-2 d-block">About Us</Link></li>
+                  <li><Link to="/leadership" className="text-white text-decoration-none mb-2 d-block">Leadership</Link></li>
+                  <li><Link to="/admissions" className="text-white text-decoration-none mb-2 d-block">Admissions</Link></li>
+                  <li><Link to="/scholastic" className="text-white text-decoration-none mb-2 d-block">Scholastic</Link></li>
+                  <li><Link to="/contact" className="text-white text-decoration-none mb-2 d-block">Contact Us</Link></li>
+                </ul>
+              </div>
+            </div>
+
+            <h5 className="fw-bold mb-3">Location</h5>
+            <div className="rounded overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7500.56848699707!2d83.18080000000002!3d19.954545!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a24ec2bbfffffff%3A0x5cbd1649961116bd!2sPRAGATI%20GROUP%20OF%20INSTITUTIONS!5e0!3m2!1sen!2sin!4v1750748096273!5m2!1sen!2sin"
+                width="100%"
+                height="150"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Pragati Location"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Strip */}
+        <div className="text-center mt-4 pt-4 border-top border-light">
+          <small className="d-block text-white-50 mb-1">
+            Copyright © 2024, All Right Reserved
+          </small>
+          <small className="d-block text-white-50">
+            Designed by - Pragati Concept School, Raisingpur, Bhawanipatna, Kalahandi, 766002
+          </small>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;
