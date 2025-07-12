@@ -1,30 +1,32 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import BannerOne from "../assets/images/banner1.jpg";
-import BannerTwo from "../assets/images/banner2.jpg";
-import BannerThree from "../assets/images/banner3.jpg";
-import BannerFour from "../assets/images/banner4.jpg";
-import BannerFive from "../assets/images/banner5.jpg";
-import ChairmanImage from "../assets/images/chairman.jpg";
-import PrincipalImage from "../assets/images/princi.jpg";
-import FacilityOne from "../assets/images/facility3.jpg";
-import FacilityTwo from "../assets/images/facility2.jpg";
-import FacilityThree from "../assets/images/facility1.jpg";
+import {
+  Banner1,
+  Banner2,
+  Banner3,
+  Banner4,
+  Banner5,
+  Director,
+  Principal,
+  Facility1,
+  Facility2,
+  Facility3,
+} from "../assets/images";
 
 function Home() {
   const facilities = [
     {
-      image: FacilityOne,
+      image: Facility1,
       title: "Library",
       shortDescription: "A vast collection of books and digital resources.",
     },
     {
-      image: FacilityTwo,
+      image: Facility2,
       title: "Science Lab",
       shortDescription: "Fully equipped labs for hands-on experiments.",
     },
     {
-      image: FacilityThree,
+      image: Facility3,
       title: "Computer Lab",
       shortDescription: "State-of-the-art computer facilities.",
     },
@@ -41,23 +43,23 @@ function Home() {
           {/* Slide 1 */}
           <div className="carousel-item active position-relative">
             <img
-              src={BannerOne}
+              src={Banner1}
               className="d-block w-100 carousel-image vh-100 "
               alt="Slide 1"
             />
             <div className="carousel-gradient"></div>
             <div className="carousel-caption d-flex flex-column justify-content-center align-items-center text-center vh-100 px-3">
-              <h1 className="text-white display-4 fw-bold mb-3 slide-heading">
-                Welcome To PCS KALAHANDI
+              <h1 className="text-white display-4 fw-bold mb-2 slide-heading">
+                Welcome To Hi-Tech Public School
               </h1>
+
               <p className="text-white mb-4 slide-text">
-                Pragati Concept School, Kalahandi, a co-educational EM school
-                which follows the CBSE curriculum and offers a vibrant, verdant,
-                and secure ambience where the joy of learning is nurtured in
-                every student. The hallmark of PRAGATI institutions is quality
-                education, upholding academic excellence with a holistic
-                approach, which is the focus of the competent and caring faculty
-                members.
+                Hi-Tech Public School, Kuakhia, a co-educational English Medium
+                school which offers a vibrant, verdant, and secure ambience
+                where the joy of learning is nurtured in every student. The
+                hallmark of HI-TECH institutions is quality education, upholding
+                academic excellence with a holistic approach, which is the focus
+                of the competent and caring faculty members.
               </p>
               <Link to="/about" className="btn btn-light fw-bold px-4 py-2">
                 Read More
@@ -68,7 +70,7 @@ function Home() {
           {/* Slide 2 */}
           <div className="carousel-item position-relative">
             <img
-              src={BannerTwo}
+              src={Banner2}
               className="d-block w-100 carousel-image vh-100 "
               alt="Slide 2"
             />
@@ -90,7 +92,7 @@ function Home() {
           {/* Slide 3 */}
           <div className="carousel-item position-relative">
             <img
-              src={BannerThree}
+              src={Banner3}
               className="d-block w-100 carousel-image vh-100 "
               alt="Slide 3"
             />
@@ -99,7 +101,7 @@ function Home() {
           {/* Slide 4 */}
           <div className="carousel-item position-relative">
             <img
-              src={BannerFour}
+              src={Banner4}
               className="d-block w-100 carousel-image vh-100 "
               alt="Slide 4"
             />
@@ -108,7 +110,7 @@ function Home() {
           {/* Slide 5 */}
           <div className="carousel-item position-relative">
             <img
-              src={BannerFive}
+              src={Banner5}
               className="d-block w-100 carousel-image vh-100 "
               alt="Slide 5"
             />
@@ -141,7 +143,7 @@ function Home() {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
-      {/* Secretary's Message Section */}
+      {/* Director's Message Section */}
       <section className="py-5 bg-light">
         <div className="container">
           <motion.div
@@ -160,7 +162,7 @@ function Home() {
               viewport={{ once: true }}
             >
               <img
-                src={ChairmanImage}
+                src={Director}
                 alt="Er. Ajaya Kumar Panda"
                 className="img-fluid rounded-4 shadow-lg"
                 style={{ maxHeight: "350px", objectFit: "cover" }}
@@ -175,18 +177,24 @@ function Home() {
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <h2 className="mb-3 fw-bold text-primary">Secretary's Message</h2>
+              <h2 className="mb-3 fw-bold text-primary">Director's Message</h2>
+
+              <i className="fw-bold">
+                “Education is our passport to the future, for tomorrow belongs
+                to the people who prepare for it today”.{" "}
+              </i>
               <p className="fs-5 text-muted">
-                Welcome to PCS Kalahandi! Our mission is to inspire and empower
-                each student to achieve academic excellence and develop into
-                responsible global citizens. Together, we create a supportive
-                environment where learning thrives.
+                I consider myself fortunate enough to have been entrusted with
+                the responsibility of being an integral part of an educational
+                institution where I help nurture the future generation of our
+                country at HI-TECH PUBLIC SCHOOL.
               </p>
+
               <h5 className="mt-4 mb-0 fw-bold text-dark">
-                Er. Ajaya Kumar Panda
+                Mrs. Preeti Parna Panda
               </h5>
               <p className="mb-3 text-secondary">
-                Secretary, Pragati Group of Institutions, Kalahandi
+                Director, Hi-Tech Public School , Kuakhia
               </p>
               <Link
                 to="/about/chairman"
@@ -217,16 +225,19 @@ function Home() {
             >
               <h2 className="mb-3 fw-bold text-primary">Principal's Message</h2>
               <p className="fs-5 text-muted">
-                At PCS Kalahandi, we believe in nurturing young minds and
-                guiding them towards achieving their fullest potential. We
-                encourage creativity, discipline, and a passion for lifelong
-                learning.
+                As Principal of Hi-Tech Public School, I’m proud to be part of a
+                community where learning never stops—for students, teachers,
+                staff, and parents alike. We are committed to academic
+                excellence and holistic development, fostering values like
+                respect, integrity, compassion, and excellence. Our dedicated
+                staff lead by example, creating an environment where every
+                student can thrive and confidently face global challenges.
               </p>
               <h5 className="mt-4 mb-0 fw-bold text-dark">
                 Mr. Jeetendra Pattnaik
               </h5>
               <p className="mb-3 text-secondary">
-                Principal, Pragati Concept School
+                Principal, Hi-Tech Public School , Kuakhia
               </p>
               <Link
                 to="/about/principal-desk"
@@ -244,7 +255,7 @@ function Home() {
               viewport={{ once: true }}
             >
               <img
-                src={PrincipalImage}
+                src={Principal}
                 alt="Mr. Jeetendra Pattnaik"
                 className="img-fluid rounded-4 shadow-lg"
                 style={{ maxHeight: "400px", objectFit: "cover" }}
@@ -417,7 +428,7 @@ function Home() {
                 {/* Blog 1 */}
                 <div className="d-flex flex-md-row flex-column gap-3 align-items-center shadow-sm p-3 rounded hover-scale">
                   <img
-                    src={FacilityOne}
+                    src={Facility1}
                     alt="Blog 1"
                     className="img-fluid rounded"
                     style={{
@@ -444,7 +455,7 @@ function Home() {
                 {/* Blog 2 */}
                 <div className="d-flex flex-md-row flex-column gap-3 align-items-center shadow-sm p-3 rounded hover-scale">
                   <img
-                    src={FacilityTwo}
+                    src={Facility2}
                     alt="Blog 2"
                     className="img-fluid rounded"
                     style={{

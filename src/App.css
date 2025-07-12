@@ -1,5 +1,7 @@
 /* Nvabr */
-
+.navbar{
+  background-color: rgb(117 21 114);
+}
 .custom-ms{
     margin-left: 100px;
 }

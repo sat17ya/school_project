@@ -1,7 +1,7 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { NavLink, useLocation } from "react-router-dom";
-import LogoImage from "../assets/images/bannerheader1.png";
+import { Logo } from "../assets/images";
 
 function Navbar() {
   const location = useLocation();
@@ -32,8 +32,8 @@ function Navbar() {
           <div className="d-flex flex-lg-row flex-md-column flex-md-row align-items-center gap-3">
             <span>
               <i className="bi bi-envelope-fill me-1"></i>{" "}
-              <a className="text-light text-decoration-none" href="mailto:">
-                pragaticonceptschoolkld@gmail.com
+              <a className="text-light text-decoration-none" rel="noopener noreferrer" href="mailto:hitechpublicschool2015@gmail.com">
+                hitechpublicschool2015@gmail.com
               </a>
             </span>
             <a
@@ -59,7 +59,7 @@ function Navbar() {
       <div className="bg-white py-3 border-bottom">
         <div className="container text-center">
           <img
-            src={LogoImage}
+            src={Logo}
             alt="PCS School Logo"
             className="img-fluid"
             style={{ maxHeight: "80px" }}
@@ -68,7 +68,7 @@ function Navbar() {
       </div>
 
       {/* Main Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
         <div className="container flex-row-reverse">
           <button
             className="navbar-toggler"

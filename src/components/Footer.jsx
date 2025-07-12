@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import FooterLogo from "../assets/images/footer logo.png"
+import { FooterLogo } from "../assets/images";
 
 function Footer() {
   return (
@@ -9,17 +9,17 @@ function Footer() {
           {/* Contact Info */}
           <div className="col-md-4">
             <h5 className="fw-bold mb-3">Find us</h5>
-            <p className="mb-1">Pragati Concept School</p>
-            <p className="mb-1">Raisingpur</p>
-            <p className="mb-1">Bhawanipatna</p>
-            <p className="mb-1">Kalahandi</p>
-            <p className="mb-3">Odisha - 766002</p>
+            <p className="mb-1">Hi-Tech Public School ,</p>
+            <p className="mb-1">Kuakhia</p>
+            <p className="mb-1">Jajpur</p>
+            <p className="mb-3">Odisha - 755009</p>
 
             <h5 className="fw-bold mb-2">Call us</h5>
-            <a className="text-decoration-none text-white" href="tel:+918093370988">+91 8093370988</a>
+            <span><a className="text-decoration-none text-white" rel="noopener noreferrer" href="tel:+917328834301">+91 7328834301</a> /
+            <a className="text-decoration-none text-white" rel="noopener noreferrer" href="tel:+918327755078">+91 8327755078</a></span>
 
             <h5 className="fw-bold mb-2 mt-2">Mail us</h5>
-            <a className="text-decoration-none text-white" href="mailto:pragaticonceptschoolkld@gmail.com">pragaticonceptschoolkld@gmail.com</a>
+            <a className="text-decoration-none text-white" href="mailto:hitechpublicschool2015@gmail.com">hitechpublicschool2015@gmail.com</a>
             <small>{" "}(General Enquiry)</small>
           </div>
 
@@ -31,17 +31,17 @@ function Footer() {
               className="mb-3 footer-logo"
             />
             <p className="mb-4 px-3">
-              Pragati Concept School, a co-educational EM school offers a vibrant, verdant and secure ambience where the joy of learning is nurtured in every student.
+              Hi-Tech Public School, a co-educational EM school offers a vibrant, verdant and secure ambience where the joy of learning is nurtured in every student.
             </p>
             <h5 className="fw-bold mb-3">Follow us</h5>
             <div className="d-flex justify-content-center gap-3">
-              <a href="/" className="text-white fs-4">
+              <a href="https://www.facebook.com/profile.php?id=100075435207007" target="_blank" rel="noreferrer" className="text-white fs-4">
                 <i className="bi bi-facebook"></i>
               </a>
-              <a href="/" className="text-white fs-4">
+              <a href="https://wa.me/918327755078" target="_blank" rel="noreferrer" className="text-white fs-4">
                 <i className="bi bi-whatsapp"></i>
               </a>
-              <a href="/" className="text-white fs-4">
+              <a href="https://www.instagram.com/hi_tech_publicschool_kuakhia/?next=%2F" target="_blank" rel="noreferrer" className="text-white fs-4">
                 <i className="bi bi-instagram"></i>
               </a>
             </div>
@@ -94,7 +94,7 @@ function Footer() {
             Copyright © 2024, All Right Reserved
           </small>
           <small className="d-block text-white-50">
-            Designed by - Pragati Concept School, Raisingpur, Bhawanipatna, Kalahandi, 766002
+            Designed by - <i class="bi bi-browser-chrome"><a href="https://i-am-satyaprakash.vercel.app/" target="_blank" rel="noreferrer noopener" className="text-decoration-none"> Satya</a></i>
           </small>
         </div>
       </div>
