@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Spinner from './components/Spinner';
 import "./App.css"
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 // Home and Main Routes
 const Home = lazy(() => import('./pages/Home'));
@@ -107,6 +108,7 @@ function App() {
           <Route path="/admission/procedure" element={<Procedure />} />
           <Route path="/admission/fees" element={<Fees />} />
         </Routes>
+        <ScrollToTopButton/> 
       </Suspense>
       <Footer />
     </Router>

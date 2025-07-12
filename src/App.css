@@ -7,10 +7,9 @@
 }
 @media (max-width:993px) {
     .custom-ms{
-    margin-left: auto;
+    margin-left: auto; 
 }
 }
-
 /* The Home Page */
 .carousel-image {
   height: 100vh;

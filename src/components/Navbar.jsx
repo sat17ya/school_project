@@ -31,7 +31,7 @@ function Navbar() {
         <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center small">
           <div className="d-flex flex-lg-row flex-md-column flex-md-row align-items-center gap-3">
             <span>
-              <i className="bi bi-envelope-fill me-1"></i>{" "}
+              <i className="bi bi-envelope-fill me-1 custom-logo"></i>{" "}
               <a className="text-light text-decoration-none" rel="noopener noreferrer" href="mailto:hitechpublicschool2015@gmail.com">
                 hitechpublicschool2015@gmail.com
               </a>
@@ -42,14 +42,14 @@ function Navbar() {
               rel="noopener noreferrer"
               className="text-light text-decoration-none"
             >
-              <i className="bi bi-geo-alt-fill me-1"></i> Find Us on Map
+              <i className="bi bi-geo-alt-fill me-1 custom-logo"></i> Find Us on Map
             </a>
           </div>
           <div className="order-2 order-md-2 w-50 text-center text-md-end ">
             <Marquee gradient={false} speed={50} pauseOnHover={true}>
               📢 New Admission Open for 2024-25 &nbsp;&nbsp;&nbsp; |
               &nbsp;&nbsp;&nbsp; 📢 Annual Sports Meet on 15th July
-              &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 📢 Welcome to PCS School!
+              &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 📢 Welcome to HPS School!
             </Marquee>
           </div>
         </div>
@@ -60,7 +60,7 @@ function Navbar() {
         <div className="container text-center">
           <img
             src={Logo}
-            alt="PCS School Logo"
+            alt="HPS School Logo"
             className="img-fluid"
             style={{ maxHeight: "80px" }}
           />
@@ -80,7 +80,7 @@ function Navbar() {
           </button>
           {/* Mobile Brand Text */}
           <span className="navbar-brand d-lg-none ms-2 text-white fw-bold">
-            PCS, Kalahandi
+            Hi-Tech Public School
           </span>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav custom-ms fw-bold">
