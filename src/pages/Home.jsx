@@ -6,8 +6,6 @@ import {
   Banner3,
   Banner4,
   Banner5,
-  Director,
-  Principal,
   Facility1,
   Facility2,
   Facility3,
@@ -153,23 +151,6 @@ function Home() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            {/* Chairman Image */}
-            <motion.div
-              className="col-md-4 mb-4 mb-md-0 text-center"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <img
-                src={Director}
-                alt="Er. Ajaya Kumar Panda"
-                className="img-fluid rounded-4 shadow-lg"
-                style={{ maxHeight: "350px", objectFit: "cover" }}
-              />
-            </motion.div>
-
-            {/* Message Content */}
             <motion.div
               className="col-md-8"
               initial={{ opacity: 0, x: 50 }}
@@ -233,9 +214,7 @@ function Home() {
                 staff lead by example, creating an environment where every
                 student can thrive and confidently face global challenges.
               </p>
-              <h5 className="mt-4 mb-0 fw-bold text-dark">
-                Mr. Jeetendra Pattnaik
-              </h5>
+              
               <p className="mb-3 text-secondary">
                 Principal, Hi-Tech Public School , Kuakhia
               </p>
@@ -245,21 +224,6 @@ function Home() {
               >
                 Read More
               </Link>
-            </motion.div>
-
-            <motion.div
-              className="col-md-4 mb-4 mb-md-0 text-center"
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <img
-                src={Principal}
-                alt="Mr. Jeetendra Pattnaik"
-                className="img-fluid rounded-4 shadow-lg"
-                style={{ maxHeight: "400px", objectFit: "cover" }}
-              />
             </motion.div>
           </motion.div>
         </div>
