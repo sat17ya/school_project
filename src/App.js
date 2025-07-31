@@ -6,6 +6,8 @@ import ScrollToTop from './components/ScrollToTop';
 import Spinner from './components/Spinner';
 import "./App.css"
 import ScrollToTopButton from './components/ScrollToTopButton';
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 // Home and Main Routes
 const Home = lazy(() => import('./pages/Home'));
@@ -58,6 +60,8 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <Analytics/>
+      <SpeedInsights/>
       <Navbar />
       <Suspense fallback={<Spinner />}>
         <Routes>
