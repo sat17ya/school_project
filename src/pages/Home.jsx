@@ -14,7 +14,7 @@ import {
 function Home() {
   const facilities = [
     {
-      image: Facility1,
+      image: Facility3,
       title: "Library",
       shortDescription: "A vast collection of books and digital resources.",
     },
@@ -24,7 +24,7 @@ function Home() {
       shortDescription: "Fully equipped labs for hands-on experiments.",
     },
     {
-      image: Facility3,
+      image: Facility1,
       title: "Computer Lab",
       shortDescription: "State-of-the-art computer facilities.",
     },
@@ -52,7 +52,7 @@ function Home() {
               </h1>
 
               <p className="text-white mb-4 slide-text">
-                Hi-Tech Public School, Kuakhia, a co-educational English Medium
+                Hi-Tech Public School, Mugupal, a co-educational English Medium
                 school which offers a vibrant, verdant, and secure ambience
                 where the joy of learning is nurtured in every student. The
                 hallmark of HI-TECH institutions is quality education, upholding
@@ -81,9 +81,9 @@ function Home() {
                 Shaping leaders of tomorrow with quality education and holistic
                 growth.
               </p>
-              <a href="/academics" className="btn btn-light fw-bold px-4 py-2">
+              <Link to="/academics" className="btn btn-light fw-bold px-4 py-2">
                 Read More
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -175,14 +175,8 @@ function Home() {
                 Mrs. Preeti Parna Panda
               </h5>
               <p className="mb-3 text-secondary">
-                Director, Hi-Tech Public School , Kuakhia
+                Director, Hi-Tech Public School , Mugupal
               </p>
-              <Link
-                to="/about/chairman"
-                className="btn btn-primary mt-2 px-4 py-2 fw-bold"
-              >
-                Read More
-              </Link>
             </motion.div>
           </motion.div>
         </div>
@@ -214,16 +208,10 @@ function Home() {
                 staff lead by example, creating an environment where every
                 student can thrive and confidently face global challenges.
               </p>
-              
+
               <p className="mb-3 text-secondary">
-                Principal, Hi-Tech Public School , Kuakhia
+                Principal, Hi-Tech Public School , Mugupal
               </p>
-              <Link
-                to="/about/principal-desk"
-                className="btn btn-primary mt-2 px-4 py-2 fw-bold"
-              >
-                Read More
-              </Link>
             </motion.div>
           </motion.div>
         </div>
@@ -288,7 +276,7 @@ function Home() {
                   develop creativity, life skills, teamwork, and leadership.
                 </p>
                 <Link
-                  to="/beyond"
+                  to="/gallery"
                   className="btn btn-outline-success fw-bold px-4 py-2"
                 >
                   Read More
@@ -310,11 +298,11 @@ function Home() {
                 </div>
                 <h4 className="fw-bold mb-3">Facilities</h4>
                 <p className="text-muted mb-4">
-                  PCS offers state-of-the-art facilities including modern
+                  HPS offers state-of-the-art facilities including modern
                   classrooms, labs, libraries, and sports complexes.
                 </p>
                 <Link
-                  to="/academics/facilities"
+                  to="/facilities"
                   className="btn btn-outline-danger fw-bold px-4 py-2"
                 >
                   Read More
@@ -366,7 +354,7 @@ function Home() {
           </div>
 
           <Link
-            to="/academics/facilities"
+            to="/facilities"
             className="btn btn-warning fw-bold mt-4 px-4 py-2"
           >
             View All Facilities
@@ -404,7 +392,7 @@ function Home() {
                   <div>
                     <h5 className="fw-bold mb-2">Empowering Future Leaders</h5>
                     <p className="text-muted mb-0">
-                      PCS Kalahandi nurtures students through holistic education
+                      HPS Mugupal nurtures students through holistic education
                       and leadership building activities.
                     </p>
                     <Link

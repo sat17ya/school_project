@@ -2,9 +2,12 @@
 .navbar{
   background-color: rgb(117 21 114);
 }
-.custom-ms{
-    margin-left: 100px;
+.f-text{
+  color:rgb(117 21 114) ;
 }
+/* .custom-ms{
+    margin-left: 100px;
+} */
 @media (max-width:993px) {
     .custom-ms{
     margin-left: auto; 
@@ -189,4 +192,217 @@
 .footer-logo{
     max-width: 230px;
 }
+}
+
+/* === Aim & Objective Section === */
+.aim-objective-section {
+  background: linear-gradient(135deg, #fef9ff, #f3f7fa);
+}
+
+.aim-card {
+  background: #ffffff;
+  border-left: 5px solid #751572;
+  transition: all 0.3s ease;
+}
+
+.aim-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(117, 21, 114, 0.1);
+}
+
+.aim-card i {
+  color: #751572;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #751572;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+/* Vision & Mission Section */
+.vision-mission-section {
+  background: linear-gradient(to bottom right, #f8f9fa, #eef5fc);
+}
+
+.vm-card {
+  background-color: #ffffff;
+  border-left: 5px solid #751572;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vm-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.75rem 1.25rem rgba(117, 21, 114, 0.08);
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #751572;
+}
+
+.value-card {
+  background: #fff;
+  border-top: 4px solid #751572;
+  transition: transform 0.3s ease;
+}
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.75rem 1rem rgba(117, 21, 114, 0.1);
+}
+.text-purple {
+  color: #751572;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+/* Academic Section */
+.academics-section {
+  background: linear-gradient(135deg, #fdfbff, #f2f7ff);
+}
+
+.academic-card {
+  background: #ffffff;
+  border-left: 5px solid #751572;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.academic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.75rem 1.25rem rgba(117, 21, 114, 0.08);
+}
+
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #751572;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+.class-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #751572;
+}
+.class-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(117, 21, 114, 0.1);
+}
+/* Admission Page */
+.admission-section {
+  background: linear-gradient(135deg, #f7faff, #ffffff);
+}
+
+.admission-content {
+  max-width: 800px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+}
+
+.admission-step {
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admission-step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(117, 21, 114, 0.1);
+}
+
+.text-purple {
+  color: #751572;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #751572;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .admission-content {
+    font-size: 0.95rem;
+  }
+}
+/* Fee Structure Section */
+.fee-structure-section {
+  background: linear-gradient(135deg, #fdfbff, #f3f6fd);
+  position: relative;
+}
+
+.fee-image-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.fee-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+  user-select: none;
+  pointer-events: none;
+}
+
+.fee-image-wrapper:hover .fee-image {
+  transform: scale(1.01);
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #751572;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .fee-image-wrapper {
+    padding: 0 1rem;
+  }
+}
+
+/* Floating Action Buttton  */
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.4s ease-in;
+}
+.fade-out {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease-out;
+}
+
+.fab-buttons.fab-open .fab-action {
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.fab-buttons .fab-action {
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
 }

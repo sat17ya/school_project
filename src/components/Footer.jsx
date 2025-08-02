@@ -10,12 +10,12 @@ function Footer() {
           <div className="col-md-4">
             <h5 className="fw-bold mb-3">Find us</h5>
             <p className="mb-1">Hi-Tech Public School ,</p>
-            <p className="mb-1">Kuakhia</p>
+            <p className="mb-1">Mugupal, Haripur-Balipatna Road</p>
             <p className="mb-1">Jajpur</p>
             <p className="mb-3">Odisha - 755009</p>
 
             <h5 className="fw-bold mb-2">Call us</h5>
-            <span><a className="text-decoration-none text-white" rel="noopener noreferrer" href="tel:+917328834301">+91 7328834301</a> /
+            <span><a className="text-decoration-none text-white" rel="noopener noreferrer" href="tel:+917328834300">+91 7328834300</a> /
             <a className="text-decoration-none text-white" rel="noopener noreferrer" href="tel:+918327755078">+91 8327755078</a></span>
 
             <h5 className="fw-bold mb-2 mt-2">Mail us</h5>
@@ -54,19 +54,18 @@ function Footer() {
                 <h5 className="fw-bold mb-3">Useful Links</h5>
                 <ul className="list-unstyled">
                   <li><Link to="/" className="text-white text-decoration-none mb-2 d-block">Home</Link></li>
-                  <li><Link to="/vision" className="text-white text-decoration-none mb-2 d-block">Vision & Mission</Link></li>
+                  <li><Link to="/about/vision-mission" className="text-white text-decoration-none mb-2 d-block">Vision & Mission</Link></li>
                   <li><Link to="/facilities" className="text-white text-decoration-none mb-2 d-block">Facilities</Link></li>
-                  <li><Link to="/events" className="text-white text-decoration-none mb-2 d-block">Events</Link></li>
-                  <li><Link to="/co-scholastic" className="text-white text-decoration-none mb-2 d-block">Co-Scholastic</Link></li>
+                  <li><Link to="/gallery" className="text-white text-decoration-none mb-2 d-block">Co-Scholastic</Link></li>
                 </ul>
               </div>
               <div className="col-6 mb-4">
                 <h5 className="fw-bold mb-3">&nbsp;</h5>
                 <ul className="list-unstyled">
                   <li><Link to="/about" className="text-white text-decoration-none mb-2 d-block">About Us</Link></li>
-                  <li><Link to="/leadership" className="text-white text-decoration-none mb-2 d-block">Leadership</Link></li>
-                  <li><Link to="/admissions" className="text-white text-decoration-none mb-2 d-block">Admissions</Link></li>
-                  <li><Link to="/scholastic" className="text-white text-decoration-none mb-2 d-block">Scholastic</Link></li>
+                  {/* <li><Link to="/leadership" className="text-white text-decoration-none mb-2 d-block">Leadership</Link></li> */}
+                  <li><Link to="/admission/procedure" className="text-white text-decoration-none mb-2 d-block">Admissions</Link></li>
+                  <li><Link to="/academics" className="text-white text-decoration-none mb-2 d-block">Scholastic</Link></li>
                   <li><Link to="/contact" className="text-white text-decoration-none mb-2 d-block">Contact Us</Link></li>
                 </ul>
               </div>
@@ -75,7 +74,7 @@ function Footer() {
             <h5 className="fw-bold mb-3">Location</h5>
             <div className="rounded overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7500.56848699707!2d83.18080000000002!3d19.954545!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a24ec2bbfffffff%3A0x5cbd1649961116bd!2sPRAGATI%20GROUP%20OF%20INSTITUTIONS!5e0!3m2!1sen!2sin!4v1750748096273!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3729.8576912412273!2d86.21315539999999!3d20.7970444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19593eb103c827%3A0xdafe5eda99c95041!2sHi%20Tech%20Public%20School!5e0!3m2!1sen!2sin!4v1754129162366!5m2!1sen!2sin"
                 width="100%"
                 height="150"
                 style={{ border: 0 }}

@@ -1,4 +1,3 @@
-import React from "react";
 import Marquee from "react-fast-marquee";
 import { NavLink, useLocation } from "react-router-dom";
 import { Logo } from "../assets/images";
@@ -18,10 +17,7 @@ function Navbar() {
 
   // Active path detection for parent links
   const isAboutActive = location.pathname.startsWith("/about");
-  const isAcademicsActive = location.pathname.startsWith("/academics");
-  const isBeyondActive = location.pathname.startsWith("/beyond");
   const isGalleryActive = location.pathname.startsWith("/gallery");
-  const isEventsActive = location.pathname.startsWith("/events");
   const isAdmissionActive = location.pathname.startsWith("/admission");
 
   return (
@@ -32,22 +28,27 @@ function Navbar() {
           <div className="d-flex flex-lg-row flex-md-column flex-md-row align-items-center gap-3">
             <span>
               <i className="bi bi-envelope-fill me-1 custom-logo"></i>{" "}
-              <a className="text-light text-decoration-none" rel="noopener noreferrer" href="mailto:hitechpublicschool2015@gmail.com">
+              <a
+                className="text-light text-decoration-none"
+                rel="noopener noreferrer"
+                href="mailto:hitechpublicschool2015@gmail.com"
+              >
                 hitechpublicschool2015@gmail.com
               </a>
             </span>
             <a
-              href="https://maps.app.goo.gl/LJxfqDANQmzUQsBL8"
+              href="https://maps.app.goo.gl/JDknB32Xfuy7Tfxm9"
               target="_blank"
               rel="noopener noreferrer"
               className="text-light text-decoration-none"
             >
-              <i className="bi bi-geo-alt-fill me-1 custom-logo"></i> Find Us on Map
+              <i className="bi bi-geo-alt-fill me-1 custom-logo"></i> Find Us on
+              Map
             </a>
           </div>
           <div className="order-2 order-md-2 w-50 text-center text-md-end ">
             <Marquee gradient={false} speed={50} pauseOnHover={true}>
-              📢 New Admission Open for 2024-25 &nbsp;&nbsp;&nbsp; |
+              📢 New Admission Open for 2025-26 &nbsp;&nbsp;&nbsp; |
               &nbsp;&nbsp;&nbsp; 📢 Annual Sports Meet on 15th July
               &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp; 📢 Welcome to HPS School!
             </Marquee>
@@ -60,7 +61,7 @@ function Navbar() {
         <div className="container text-center">
           <img
             src={Logo}
-            alt="HPS School Logo"
+            alt="Hi-Tech Public School Logo"
             className="img-fluid"
             style={{ maxHeight: "80px" }}
           />
@@ -82,7 +83,10 @@ function Navbar() {
           <span className="navbar-brand d-lg-none ms-2 text-white fw-bold">
             Hi-Tech Public School
           </span>
-          <div className="collapse navbar-collapse" id="navbarNav">
+          <div
+            className="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
             <ul className="navbar-nav custom-ms fw-bold">
               <li className="nav-item">
                 <NavLink
@@ -105,7 +109,6 @@ function Navbar() {
                   id="aboutDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
                 >
                   About Us
                 </NavLink>
@@ -122,169 +125,26 @@ function Navbar() {
                   <li>
                     <NavLink
                       className="dropdown-item"
-                      to="/about/principal-desk"
-                      onClick={handleNavLinkClick}
-                    >
-                      From the Principal's Desk
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/about/origin-history"
-                      onClick={handleNavLinkClick}
-                    >
-                      Origin and History
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/about/chairman"
-                      onClick={handleNavLinkClick}
-                    >
-                      Our Chairman
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
                       to="/about/vision-mission"
                       onClick={handleNavLinkClick}
                     >
                       Vision and Mission
                     </NavLink>
                   </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/about/school-rules"
-                      onClick={handleNavLinkClick}
-                    >
-                      School Rules and Code of Conduct
-                    </NavLink>
-                  </li>
                 </ul>
               </li>
 
-              {/* Academics Dropdown */}
-              <li className="nav-item dropdown">
-                <NavLink
-                  className={`nav-link dropdown-toggle ${
-                    isAcademicsActive ? "active" : ""
-                  }`}
-                  to="/academics"
-                  id="academicsDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
+              {/* Academics */}
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/academics"onClick={handleNavLinkClick}>
                   Academics
                 </NavLink>
-                <ul
-                  className="dropdown-menu"
-                  aria-labelledby="academicsDropdown"
-                >
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/academics/facilities"
-                      onClick={handleNavLinkClick}
-                    >
-                      Academic Facilities
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/academics/enrollment"
-                      onClick={handleNavLinkClick}
-                    >
-                      Enrollment of Students
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/academics/faculty"
-                      onClick={handleNavLinkClick}
-                    >
-                      Faculty
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/academics/books"
-                      onClick={handleNavLinkClick}
-                    >
-                      List of Books
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/academics/tc-sample"
-                      onClick={handleNavLinkClick}
-                    >
-                      Transfer Certificate Sample
-                    </NavLink>
-                  </li>
-                </ul>
               </li>
-
-              {/* Beyond Curriculum Dropdown */}
-              <li className="nav-item dropdown">
-                <NavLink
-                  className={`nav-link dropdown-toggle ${
-                    isBeyondActive ? "active" : ""
-                  }`}
-                  to="/beyond"
-                  id="beyondDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Beyond Curriculum
+              {/* Facilites */}
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/facilities"onClick={handleNavLinkClick}>
+                  Facilities
                 </NavLink>
-                <ul className="dropdown-menu" aria-labelledby="beyondDropdown">
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/beyond/clubs"
-                      onClick={handleNavLinkClick}
-                    >
-                      Clubs
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/beyond/activities"
-                      onClick={handleNavLinkClick}
-                    >
-                      Co-curricular Activities
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/beyond/sports"
-                      onClick={handleNavLinkClick}
-                    >
-                      Sports and Games
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/beyond/workshops"
-                      onClick={handleNavLinkClick}
-                    >
-                      Workshops and Seminars
-                    </NavLink>
-                  </li>
-                </ul>
               </li>
 
               {/* Gallery Dropdown */}
@@ -297,7 +157,6 @@ function Navbar() {
                   id="galleryDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
                 >
                   Gallery
                 </NavLink>
@@ -323,60 +182,6 @@ function Navbar() {
                 </ul>
               </li>
 
-              {/* Events Dropdown */}
-              <li className="nav-item dropdown">
-                <NavLink
-                  className={`nav-link dropdown-toggle ${
-                    isEventsActive ? "active" : ""
-                  }`}
-                  to="/events"
-                  id="eventsDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Events
-                </NavLink>
-                <ul className="dropdown-menu" aria-labelledby="eventsDropdown">
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/events/awards"
-                      onClick={handleNavLinkClick}
-                    >
-                      Awards
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/events/functions"
-                      onClick={handleNavLinkClick}
-                    >
-                      Functions and Events
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/events/assembly"
-                      onClick={handleNavLinkClick}
-                    >
-                      School Assembly
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/events/trips"
-                      onClick={handleNavLinkClick}
-                    >
-                      Trips and Excursions
-                    </NavLink>
-                  </li>
-                </ul>
-              </li>
-
               {/* Admission Dropdown */}
               <li className="nav-item dropdown">
                 <NavLink
@@ -387,7 +192,6 @@ function Navbar() {
                   id="admissionDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
                 >
                   Admission
                 </NavLink>
@@ -435,16 +239,6 @@ function Navbar() {
                   onClick={handleNavLinkClick}
                 >
                   Contact Us
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link"
-                  to="/results"
-                  end
-                  onClick={handleNavLinkClick}
-                >
-                  Results
                 </NavLink>
               </li>
             </ul>
