@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
+import {CalenderImg} from "../assets/images/index"; 
 
 function Academics() {
   const titleControls = useAnimation();
@@ -74,6 +75,23 @@ function Academics() {
             </motion.div>
           ))}
         </div>
+
+        {/* Academic Calendar Image */}
+        <motion.div
+          className="my-5 text-center"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          <h4 className="text-primary fw-semibold mb-3">Academic Calendar 2025–26</h4>
+          <img
+            src={CalenderImg}
+            alt="Academic Calendar 2025–26"
+            className="img-fluid rounded shadow"
+            style={{ maxWidth: "100%", height: "auto" }}
+          />
+        </motion.div>
 
         {/* Classes Offered */}
         <motion.div

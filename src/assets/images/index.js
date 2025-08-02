@@ -10,6 +10,7 @@ import Principal from "./principal.png"
 import Facility1 from "./facility1.jpg"
 import Facility2 from "./facility2.jpg"
 import Facility3 from "./facility3.jpg"
-import FooterLogo from "./footerLogo.webp"
+import FooterLogo from "./footerLogo.png"
+import CalenderImg from "./calender-for-2025-26.webp"
 
-export{Banner1,Banner2,Banner3,Banner4,Banner5,Logo,FooterBg,Director,Principal,Facility1,Facility2,Facility3,FooterLogo}
+export{Banner1,Banner2,Banner3,Banner4,Banner5,Logo,FooterBg,Director,Principal,Facility1,Facility2,Facility3,FooterLogo,CalenderImg}

@@ -26,6 +26,7 @@ function Fees() {
             alt="Hi-Tech Public School Fee Structure 2025-26"
             className="img-fluid rounded shadow fee-image"
             draggable="false"
+            loading='lazy'
           />
         </motion.div>
       </div>

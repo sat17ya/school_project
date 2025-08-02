@@ -1,17 +1,23 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import pdf1 from "../assets/pdf/COR ORDER.pdf"
-import pdf2 from "../assets/pdf/Tirupati trust.pdf"
+import React from "react";
+import { motion } from "framer-motion";
+import { CalenderImg } from "../assets/images/index";
+import { CorOrder, Trust } from "../assets/pdf/index";
 
-
-const pdfs = [
+const files = [
   {
-    title: 'Recognition Certificate',
-    file: pdf1,
+    title: "Academic Calendar 2025–26",
+    file: CalenderImg,
+    type: "image",
   },
   {
-    title: 'Affiliation Certificate',
-    file: pdf2,
+    title: "Recognition Certificate",
+    file: CorOrder,
+    type: "pdf",
+  },
+  {
+    title: "Trust Deed",
+    file: Trust,
+    type: "pdf",
   },
 ];
 
@@ -36,11 +42,13 @@ function Disclosure() {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          As per regulatory guidelines, we provide mandatory public disclosures including school affiliations, management details, staff information, and academic results.
+          As per regulatory guidelines, we provide mandatory public disclosures
+          including school affiliations, management details, staff information,
+          and academic results.
         </motion.p>
 
         <div className="row g-4">
-          {pdfs.map((doc, index) => (
+          {files.map((item, index) => (
             <motion.div
               key={index}
               className="col-md-6"
@@ -51,12 +59,18 @@ function Disclosure() {
             >
               <div className="card shadow border-0 h-100 disclosure-card">
                 <div className="card-body d-flex align-items-center">
-                  <i className="bi bi-file-earmark-pdf-fill text-danger fs-1 me-3"></i>
+                  <i
+                    className={`bi ${
+                      item.type === "pdf"
+                        ? "bi-file-earmark-pdf-fill text-danger"
+                        : "bi-image-fill text-info"
+                    } fs-1 me-3`}
+                  ></i>
                   <div className="flex-grow-1">
-                    <h5 className="card-title mb-2">{doc.title}</h5>
+                    <h5 className="card-title mb-2">{item.title}</h5>
                     <div className="d-flex gap-3">
                       <a
-                        href={doc.file}
+                        href={item.file}
                         className="btn btn-outline-success btn-sm"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -65,7 +79,7 @@ function Disclosure() {
                         View
                       </a>
                       <a
-                        href={doc.file}
+                        href={item.file}
                         className="btn btn-outline-primary btn-sm"
                         download
                       >
