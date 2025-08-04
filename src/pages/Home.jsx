@@ -461,9 +461,6 @@ function Home() {
                       📢 Admission Open for 2024-25.
                     </li>
                     <li className="mb-4 pb-2 border-bottom">
-                      🏆 Annual Sports Meet on 15th July.
-                    </li>
-                    <li className="mb-4 pb-2 border-bottom">
                       🎓 Parent-Teacher Meeting on 20th July.
                     </li>
                     <li className="mb-4 pb-2 border-bottom">
