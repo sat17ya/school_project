@@ -46,46 +46,51 @@ function Disclosure() {
           including school affiliations, management details, staff information,
           and academic results.
         </motion.p>
-        <h2 className="fw-bold text-primary">General Information:</h2>
-        <table className="table table-striped mb-5">
-          <thead>
-            <tr>
-              <th scope="col">SL NO</th>
-              <th scope="col">INFORMATION</th>
-              <th scope="col">DETAILS</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>NAME OF THE SCHOOL</td>
-              <td>HI-TECH PUBLIC SCHOOL</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>COMPLETE ADDRESS WITH PINCODE</td>
-              <td>
-                HI-TECH PUBLIC SCHOOL,MUGUPAL,HARIPUR-BALIPATANA
-                ROAD,JAJPUR,ODISHA,755009
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>PRINCIPAL NAME & QUALIFICATION</td>
-              <td>ANUPAMA SETHY - M.Sc,B.Ed</td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>SCHOOL EMAIL ID</td>
-              <td>hitechpublicschool2015@gmail.com</td>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td>CONTACT DETAILS LANDLINE/ MOBILE</td> 
-              <td>+91 7328834300 /+91 8327755078</td>
-            </tr>
-          </tbody>
-        </table>
+        <div>
+          <h2 className="fw-bold text-primary">General Information:</h2>
+          <div className="table-responsive">
+            <table className="table table-striped mb-5">
+              <thead>
+                <tr>
+                  <th scope="col">SL NO</th>
+                  <th scope="col">INFORMATION</th>
+                  <th scope="col">DETAILS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>NAME OF THE SCHOOL</td>
+                  <td>HI-TECH PUBLIC SCHOOL</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>COMPLETE ADDRESS WITH PINCODE</td>
+                  <td>
+                    HI-TECH PUBLIC SCHOOL,MUGUPAL,HARIPUR-BALIPATANA
+                    ROAD,JAJPUR,ODISHA,755009
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>PRINCIPAL NAME & QUALIFICATION</td>
+                  <td>ANUPAMA SETHY - M.Sc,B.Ed</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>SCHOOL EMAIL ID</td>
+                  <td>hitechpublicschool2015@gmail.com</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>CONTACT DETAILS LANDLINE/ MOBILE</td>
+                  <td>+91 7328834300 /+91 8327755078</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
         <div className="row g-4">
           {files.map((item, index) => (
             <motion.div
