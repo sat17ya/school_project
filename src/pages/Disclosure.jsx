@@ -1,7 +1,24 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { CalenderImg } from "../assets/images/index";
-import { CorOrder, Trust } from "../assets/pdf/index";
+import { CalenderImg, Bal22_23 } from "../assets/images/index";
+import {
+  CorOrder,
+  Trust,
+  Bal21_22,
+  Bal23_24,
+  STRUCTURAL_STABILITY_CERTIFICATE,
+  BluePrint,
+  LandCert,
+  Landoc,
+  NonProp,
+  WaterDoc,
+  SportDoc,
+  TeacherDoc,
+  Res1,
+  Res2,
+  Res3,
+  PTA,
+} from "../assets/pdf/index";
 
 const files = [
   {
@@ -17,6 +34,81 @@ const files = [
   {
     title: "Trust Deed",
     file: Trust,
+    type: "pdf",
+  },
+  {
+    title: "Teachers Details",
+    file: TeacherDoc,
+    type: "pdf",
+  },
+  {
+    title: "Parents Teachers Association",
+    file: PTA,
+    type: "pdf",
+  },
+  {
+    title: "Balance Sheet 2021-22",
+    file: Bal21_22,
+    type: "pdf",
+  },
+  {
+    title: "Balance Sheet 2022-23",
+    file: Bal22_23,
+    type: "img",
+  },
+  {
+    title: "Balance Sheet 2023-24",
+    file: Bal23_24,
+    type: "pdf",
+  },
+  {
+    title: "Structural Stability Certificate",
+    file: STRUCTURAL_STABILITY_CERTIFICATE,
+    type: "pdf",
+  },
+  {
+    title: "Blue Print",
+    file: BluePrint,
+    type: "pdf",
+  },
+  {
+    title: "Land Certificate",
+    file: LandCert,
+    type: "pdf",
+  },
+  {
+    title: "Land Documents",
+    file: Landoc,
+    type: "pdf",
+  },
+  {
+    title: "Non Propitory Document",
+    file: NonProp,
+    type: "pdf",
+  },
+  {
+    title: "Test report of water samples",
+    file: WaterDoc,
+    type: "pdf",
+  },
+  {
+    title: "Sports Equipment Documents",
+    file: SportDoc,
+    type: "pdf",
+  },
+  {
+    title: "Result 2022-23",
+    file: Res1,
+    type: "pdf",
+  },
+  {
+    title: "Result 2023-24",
+    file: Res2,
+    type: "pdf",
+  },
+  {
+    title: "Result 2024-25",
+    file: Res3,
     type: "pdf",
   },
 ];
@@ -79,7 +171,14 @@ function Disclosure() {
                 <tr>
                   <th scope="row">4</th>
                   <td>SCHOOL EMAIL ID</td>
-                  <td>hitechpublicschool2015@gmail.com</td>
+                  <td>
+                    <a
+                      href="mailto:hitechpublicschool2015@gmail.com"
+                      className="text-decoration-none"
+                    >
+                      hitechpublicschool2015@gmail.com
+                    </a>
+                  </td>
                 </tr>
                 <tr>
                   <th scope="row">5</th>
